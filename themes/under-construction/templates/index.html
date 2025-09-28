@@ -1,10 +1,23 @@
 {% extends "base.html" %}
-{% block title %}{{ SITENAME }} - Under Construction{% endblock %}
+{% block title %}{{ SITENAME }} - Portfolio{% endblock %}
 {% block content %}
 <div class="container">
-    <h1>{{ SITENAME }}</h1>
+    <div class="header">
+        <h1>{{ SITENAME }}</h1>
+        <p class="subtitle">My Portfolio</p>
+    </div>
+    
     <div class="construction-message">
-        <h2>🚧 Site Under Construction 🚧</h2>
+        <div class="icon">🚧</div>
+        <h2>Under construction</h2>        
+        <div class="contact">
+
+            <a href="mailto:lucienpiat33@gmail.com ">lucienpiat33@gmail.com</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 Lucien Piat. Propulsé par <a href="https://getpelican.com/" target="_blank">Pelican</a></p>
     </div>
 </div>
 {% endblock %}
