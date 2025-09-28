@@ -1,0 +1,59 @@
+# Pelican generated output
+output/
+docs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Pelican
+*.pid
+srv.pid
+pelican.pid
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Logs
+*.log
+
+# Local development
+local_settings.py
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+*.bak
+.*.swp
+*~.nib
