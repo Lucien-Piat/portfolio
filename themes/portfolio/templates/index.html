@@ -34,6 +34,45 @@
             <p>{{ ABOUT_ME }}</p>
         </section>
 
+        <!-- Experience & Education Row -->
+        <div class="experience-education-row">
+            <!-- Work Experience Section -->
+            <section id="experience" class="section half-section">
+                <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                <div class="timeline">
+                    {% for job in WORK_EXPERIENCE %}
+                    <div class="timeline-item">
+                        <div class="timeline-date">{{ job.period }}</div>
+                        <div class="timeline-content">
+                            <h4>{{ job.title }}</h4>
+                            <p class="timeline-company">{{ job.company }}</p>
+                            <p class="timeline-description">{{ job.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section half-section">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="timeline">
+                    {% for edu in EDUCATION %}
+                    <div class="timeline-item">
+                        <div class="timeline-date">{{ edu.period }}</div>
+                        <div class="timeline-content">
+                            <h4>{{ edu.degree }}</h4>
+                            <p class="timeline-company">{{ edu.institution }}</p>
+                            {% if edu.note %}
+                            <p class="timeline-note">{{ edu.note }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
+
         <!-- Skills Section -->
         <section id="skills" class="section">
             <h2><i class="fas fa-code"></i> Skills</h2>
@@ -54,11 +93,20 @@
         <!-- Projects Section -->
         <section id="projects" class="section">
             <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-            <div class="projects-grid">
+            <div class="projects-list">
                 {% for project in PROJECTS %}
-                <div class="project-card">
+                <div class="project-card-vertical">
                     <h3>{{ project.name }}</h3>
                     <p>{{ project.description }}</p>
+                    
+                    {% if project.images %}
+                    <div class="project-images">
+                        {% for image in project.images %}
+                        <img src="{{ SITEURL }}/{{ image }}" alt="{{ project.name }} screenshot {{ loop.index }}" class="project-thumbnail">
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    
                     <div class="project-tech">
                         {% for tech in project.tech %}
                         <span class="tech-tag">{{ tech }}</span>
@@ -66,16 +114,38 @@
                     </div>
                     <div class="project-links">
                         {% if project.github %}
-                        <a href="{{ project.github }}" target="_blank"><i class="fab fa-github"></i> Github</a>
+                        <a href="{{ project.github }}" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                         {% endif %}
                         {% if project.gitlab %}
-                        <a href="{{ project.gitlab }}" target="_blank"><i class="fas fa-external-link-alt"></i> Gitlab (institutional)</a>
+                        <a href="{{ project.gitlab }}" target="_blank"><i class="fab fa-gitlab"></i> GitLab</a>
+                        {% endif %}
+                        {% if project.extra %}
+                        <a href="{{ project.extra[1] }}" target="_blank"><i class="fas fa-external-link-alt"></i> {{ project.extra[0] }}</a>
                         {% endif %}
                     </div>
                 </div>
                 {% endfor %}
             </div>
         </section>
+
+        <!-- Additional Information Section -->
+        {% if ALSO %}
+        <section id="additional" class="section">
+            <h2><i class="fas fa-info-circle"></i> Additional Information</h2>
+            <div class="additional-grid">
+                {% for category, items in ALSO.items() %}
+                <div class="additional-category">
+                    <h4>{{ category }}</h4>
+                    <ul>
+                        {% for item in items %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
 
         <!-- Contact Section -->
         <section id="contact" class="section">
