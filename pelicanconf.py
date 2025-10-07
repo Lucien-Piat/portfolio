@@ -27,18 +27,16 @@ LINKEDIN_URL = 'https://www.linkedin.com/in/lucien-piat-47930419b/'
 
 # About Section
 ABOUT_ME = """
-I'm a final-year M2 Bioinformatics student at the University of Rouen, currently completing an 18-month apprenticeship at INRAE. 
-I have expierce in pangenomics and genome assembly, developing efficient computational solutions for large-scale genomic data analysis.
+I'm a final-year <b>M2 Bioinformatics student</b> at the University of Rouen, currently completing an 18-month apprenticeship at INRAE. <br> <br>
 
-I both like to assble state fo the art tools into robust pipelines and to develop new computational methods when needed.
+I have experience in <b>pangenomics and genome assembly</b>, developing efficient computational solutions for large-scale genomic data analysis.
 """
-
 # Skills Section
 SKILLS = {
-    'Bioinformatics': ['Genome Assembly ⭐', 'Pangenomics ⭐', 'NGS Analysis', 'Population Genetics', 
+    'Bioinformatics': ['Genome Assembly ⋆', 'Pangenomics ⋆', 'NGS Analysis', 'Population Genetics', 
                        'Workflow Development', 'Structural Variants', 'OOP', 'Simulations'],
-    'Programming': ['Python ⭐', 'Snakemake ⭐', 'Bash', 'R', 'SQL', 'Java', 'C', 'LaTeX'],
-    'DevOps & HPC': ['Docker', 'Apptainer', 'SLURM', 'Git', 'Conda', 'CI/CD', 'Cluster Computing'],
+    'Programming': ['Python ⋆', 'Snakemake ⋆', 'Bash', 'R', 'SQL', 'Java', 'C', 'LaTeX'],
+    'DevOps & HPC': ['Apptainer ⋆', 'Docker', 'SLURM', 'Git', 'Conda', 'CI/CD', 'Cluster Computing'],
 }
 
 # Projects Section
@@ -59,21 +57,28 @@ PROJECTS = [
         'github': 'https://github.com/inrae/GenomAsm4pg',
         'gitlab': 'https://forge.inrae.fr/asm4pg/GenomAsm4pg/',
         'extra' : ("Annimated flowchart", "https://asm4pg-animated-7dc863.pages-forge.inrae.fr/asm4pg_animated.html"),
-        'images': ['images/asm4pg_A.png']
+        'images': ['images/asm4pg_A.png', 'images/asm4pg_B.png']
     },
     {
         'name': 'Urban Tree Detection',
-        'description': 'Shiny application designed for functional enrichment analysis of biological data. It allows users to upload CSV files, select various analysis options, and visualize results through interactive plots and tables.',
-        'tech': ['R', 'Shiny', 'Computer Vision'],
-        'extra' : ("Report", "extra/DLF_report.pdf"),
-        'images': ['images/dlf_A.png']
+        'description': 'Deep learning pipeline for automated tree detection and counting from satellite imagery using U-Net architecture. Developed during Erasmus+ exchange at University of Groningen.',
+        'tech': ['Computer Vision', 'Python', 'Deep Learning'],
+        'extra' : ("Report", "pdfs/DLF_report.pdf"),
+        'images': ['images/dlf_A.png', 'images/dlf_B.png']
     }, 
     {
         'name': 'FEAther',
-        'description': 'Deep learning pipeline for automated tree detection and counting from satellite imagery using U-Net architecture. Developed during Erasmus+ exchange at University of Groningen.',
-        'tech': ['Python', 'Deep Learning', 'Computer Vision'],
-        'extra' : ("Report", "extra/DLF_report.pdf"),
+        'description': 'Shiny application designed for functional enrichment analysis of biological data. It allows users to upload CSV files, select various analysis options, and visualize results through interactive plots and tables.',
+        'tech': ['R', 'Shiny', 'Functional Enrichment Analysis'],
+        'github': 'https://github.com/Lucien-Piat/FEAther',
+        'extra' : ("Website", "https://lucien-piat.shinyapps.io/feather/"),
         'images': ['images/feather_A.png', 'images/feather_B.png']
+    },
+    {
+        'name': 'Fruit Proteomics Analysis',
+        'description': 'Statistical analysis of proteomic data across five fruit species to identify differential protein expression patterns during development. Utilized R for data processing, visualization, and interpretation.',
+        'tech': ['R', 'Functional Enrichment Analysis', 'Proteomics'],
+        'images': ['images/fruits_A.png', 'images/fruits_B.png']
     }
 ]
 
@@ -126,9 +131,9 @@ EDUCATION = [
 ]
 
 ALSO = {
-    'Certifications': ['SSIAP 1 (Fire Safety Certificate)', 'SST (Workplace First Aid)', "TOEIC English - (970/990)"],
+    'Certifications': ['SSIAP 1 (Fire Safety Certificate)', 'SST (Workplace First Aid)', "TOEIC English (970/990)"],
     'Interests': ['Hiking', 'Nature & Trees', 'Continuous Learning'],
-    'Soft Skills': ['Naturally Curious', 'Quick Adaptation to New Environments', 'Team Coordination']
+    'Soft Skills': ['Curious', 'Quick Adaptation to New Environments', 'Team Coordination']
 }
 
 # Static files
@@ -136,6 +141,7 @@ STATIC_PATHS = [
     'images',
     'extra', 
     'extra/CNAME',
+    "pdfs",
 ]
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
