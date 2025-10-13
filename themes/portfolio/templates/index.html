@@ -163,5 +163,26 @@
     <footer class="footer">
         <p>&copy; 2025 {{ AUTHOR }}. Built with <a href="https://getpelican.com/" target="_blank">Pelican</a>.</p>
     </footer>
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ AUTHOR }}",
+        "url": "{{ SITEURL }}",
+        "jobTitle": "Bioinformatician",
+        "description": "{{ SITEDESCRIPTION }}",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bordeaux",
+            "addressCountry": "France"
+        },
+        "email": "{{ AUTHOR_EMAIL }}",
+        "sameAs": [
+            "{{ GITHUB_URL }}",
+            "{{ LINKEDIN_URL }}"
+        ]
+        }
+    </script>
 </div>
 {% endblock %}

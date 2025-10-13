@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ SITENAME }} - {{ SITESUBTITLE }}</title>
     <meta name="description" content="{{ SITEDESCRIPTION }}">
+    <meta name="author" content="{{ AUTHOR }}">
+    <meta name="keywords" content="Lucien Piat, bioinformatics, bioinformatician, genome assembly, pangenomics, computational biology, NGS, Bordeaux, INRAE">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ SITEURL }}">
+    <meta property="og:title" content="{{ SITENAME }} - {{ SITESUBTITLE }}">
+    <meta property="og:description" content="{{ SITEDESCRIPTION }}">
+    {% if PROFILE_IMAGE %}
+    <meta property="og:image" content="{{ SITEURL }}/{{ PROFILE_IMAGE }}">
+    {% endif %}
+        
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ SITEURL }}">
     
     <!-- CSS -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">

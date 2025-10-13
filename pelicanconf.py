@@ -139,12 +139,16 @@ ALSO = {
 # Static files
 STATIC_PATHS = [
     'images',
-    'extra', 
-    'extra/CNAME',
+    'extras', 
+    'extras/CNAME',
+    'extras/sitemap.xml',
+    'extras/robots.txt',
     "pdfs",
 ]
 EXTRA_PATH_METADATA = {
-    'extra/CNAME': {'path': 'CNAME'},
+    'extras/CNAME': {'path': 'CNAME'},
+    'extras/sitemap.xml': {'path': 'sitemap.xml'},
+    'extras/robots.txt': {'path': 'robots.txt'},
 }
 
 # Disable feed generation
