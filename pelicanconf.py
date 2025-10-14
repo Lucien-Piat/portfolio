@@ -19,6 +19,7 @@ THEME = 'themes/portfolio'
 PROFILE_IMAGE = 'images/profile.jpg'
 AUTHOR_EMAIL = 'lucienpiat33@gmail.com'
 AUTHOR_LOCATION = 'Bordeaux, France'
+FAVICON = 'images/favicon.ico'
 
 # Social Links
 GITHUB_URL = 'https://github.com/Lucien-Piat'
@@ -27,7 +28,7 @@ LINKEDIN_URL = 'https://www.linkedin.com/in/lucien-piat-47930419b/'
 
 # About Section
 ABOUT_ME = """
-I'm a final-year <b>M2 Bioinformatics student</b> at the University of Rouen, currently completing an 18-month apprenticeship at INRAE. <br> <br>
+I'm a final-year <b>M2 Bioinformatics and biostatistics student</b> at the University of Rouen, currently completing an 18-month apprenticeship at INRAE. <br> <br>
 
 I have experience in <b>pangenomics and genome assembly</b>, developing efficient computational solutions for large-scale genomic data analysis.
 """
