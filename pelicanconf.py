@@ -30,21 +30,24 @@ LINKEDIN_URL = 'https://www.linkedin.com/in/lucien-piat-47930419b/'
 ABOUT_ME = """
 I'm a final-year <b>M2 Bioinformatics and biostatistics student</b> at the University of Rouen, currently completing an 18-month apprenticeship at INRAE. <br> <br>
 
-I have experience in <b>pangenomics and genome assembly</b>, developing efficient computational solutions for large-scale genomic data analysis.
+I have experience in <b>pangenomics and genome assembly</b>, developing efficient computational solutions for large-scale genomic data analysis.<br> <br>
+
+I also served as House Manager at the Bordeaux National Opera for five years, where I coordinated reception teams during evening performances. This role taught me the value of rigor, teamwork, and an eye for detail.  
 """
 # Skills Section
 SKILLS = {
     'Bioinformatics': ['Genome Assembly ⋆', 'Pangenomics ⋆', 'NGS Analysis', 'Population Genetics', 
                        'Workflow Development', 'Structural Variants', 'OOP', 'Simulations'],
     'Programming': ['Python ⋆', 'Snakemake ⋆', 'Bash', 'R', 'SQL', 'Java', 'C', 'LaTeX'],
-    'DevOps & HPC': ['Apptainer ⋆', 'Docker', 'SLURM', 'Git', 'Conda', 'CI/CD', 'Cluster Computing'],
+    'DevOps & HPC': ['Apptainer ⋆', 'SLURM ⋆', 'Git', 'Docker', 'Conda', 'CI/CD', 'Cluster Computing'],
 }
 
 # Projects Section
 PROJECTS = [
     {
-        'name': 'MSpangepop',
+        'name': 'MSpangepop ⋆',
         'description': 'Python library for pangenome simulation under coalescent demographic models. Features clean, object-oriented architecture designed for extensibility and ease of use by biologists.',
+        'pi': "DSc Ludovic Duvaux",
         'tech': ['Python', 'Population Genetics', 'Coalescent Theory', 'OOP', 'MSprime / tskit', 'Pangenome Graphs'],
         'github': 'https://github.com/inrae/MSpangepop',
         'gitlab': "https://forge.inrae.fr/pangepop/MSpangepop/",
@@ -52,8 +55,9 @@ PROJECTS = [
         'images': ['images/mspangepop_A.png', 'images/mspangepop_B.png']
     },
     {
-        'name': 'Asm4gp',
+        'name': 'Asm4gp ⋆',
         'description': 'Comprehensive long-read assembly and QC pipeline supporting PacBio, ONT, TRIO, Hi-C, and HiFi data. Developed using Snakemake to automate haplotype-resolved genome assembly inputs for pangenome construction.',
+        'pi': "DSc Ludovic Duvaux",
         'tech': ['Snakemake', 'Python', 'SLURM', 'Apptainer', 'Conda', "Bash"],
         'github': 'https://github.com/inrae/GenomAsm4pg',
         'gitlab': 'https://forge.inrae.fr/asm4pg/GenomAsm4pg/',
@@ -61,8 +65,17 @@ PROJECTS = [
         'images': ['images/asm4pg_A.png', 'images/asm4pg_B.png']
     },
     {
+        'name': 'MycoLasso',
+        'description': 'MycoLasso is a Shiny app to load, visualize, and interactively explore geospatial data points.',
+        'tech': ['R', 'Shiny',"Leaflet"],
+        'github': 'https://github.com/Lucien-Piat/MycoLasso',
+        'extra' : ("Website", "https://lucien-piat.shinyapps.io/mycolasso/"),
+        'images': ['images/mycolasso_A.png', 'images/mycolasso_B.png']
+    },
+    {
         'name': 'Urban Tree Detection',
         'description': 'Deep learning pipeline for automated tree detection and counting from satellite imagery using U-Net architecture. Developed during Erasmus+ exchange at University of Groningen.',
+        'pi': "Pr Jean-Christophe Taveau",
         'tech': ['Computer Vision', 'Python', 'Deep Learning'],
         'extra' : ("Report", "pdfs/DLF_report.pdf"),
         'images': ['images/dlf_A.png', 'images/dlf_B.png']
@@ -70,6 +83,7 @@ PROJECTS = [
     {
         'name': 'FEAther',
         'description': 'Shiny application designed for functional enrichment analysis of biological data. It allows users to upload CSV files, select various analysis options, and visualize results through interactive plots and tables.',
+        'pi': "Asst. Prof Hélène Dauchel",
         'tech': ['R', 'Shiny', 'Functional Enrichment Analysis'],
         'github': 'https://github.com/Lucien-Piat/FEAther',
         'extra' : ("Website", "https://lucien-piat.shinyapps.io/feather/"),
@@ -77,6 +91,7 @@ PROJECTS = [
     },
     {
         'name': 'Fruit Proteomics Analysis',
+        'pi': "Dr Sophie Colombié",
         'description': 'Statistical analysis of proteomic data across five fruit species to identify differential protein expression patterns during development. Utilized R for data processing, visualization, and interpretation.',
         'tech': ['R', 'Functional Enrichment Analysis', 'Proteomics'],
         'images': ['images/fruits_A.png', 'images/fruits_B.png']
@@ -101,13 +116,7 @@ WORK_EXPERIENCE = [
         'company': 'INRAE BFP - Villenave-d\'Ornon, France',
         'period': 'May - June 2023',
         'description': 'Statistical analysis of fruit proteome across 5 species, identifying differential expression patterns across developmental stages.'
-    },
-    {
-        'title': 'House Manager (Performance Nights)',
-        'company': 'Bordeaux National Opera - France',
-        'period': '2021 - 2025',
-        'description': 'Promoted from usher to House Manager, coordinating reception teams during evening performances. Obtained SSIAP 1 fire safety certification.'
-    },
+    }
 ]
 
 EDUCATION = [
