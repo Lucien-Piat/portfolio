@@ -30,6 +30,11 @@ jobs:
         run: |
           pelican content -s pelicanconf.py
       
+      - name: Clone calculateur-accueil-gtb
+        run: |
+          git clone --depth 1 https://github.com/Lucien-Piat/calculateur-accueil-gtb.git output/calculateur-accueil-gtb
+          rm -rf output/calculateur-accueil-gtb/.git
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
