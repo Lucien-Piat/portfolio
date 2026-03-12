@@ -75,7 +75,7 @@
 
         <!-- Skills Section -->
         <section id="skills" class="section">
-            <h2><i class="fas fa-code"></i> Skills</h2>
+            <h2><i class="fas fa-code"></i>Main skills</h2>
             <div class="skills-grid">
                 {% for category, skills in SKILLS.items() %}
                 <div class="skill-category">
@@ -130,22 +130,44 @@
             </div>
         </section>
 
-        <!-- Additional Information Section -->
-        {% if ALSO %}
-        <section id="additional" class="section">
-            <h2><i class="fas fa-info-circle"></i> Additional Information</h2>
-            <div class="additional-grid">
-                {% for category, items in ALSO.items() %}
-                <div class="additional-category">
-                    <h4>{{ category }}</h4>
-                    <ul>
-                        {% for item in items %}
-                        <li>{{ item }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
+        <!-- Publications & Reports Section -->
+        {% if PUBLICATIONS or REPORTS %}
+        <section id="publications" class="section">
+            <h2><i class="fas fa-file-alt"></i> Publications & Reports</h2>
+            {% if PUBLICATIONS %}
+            <h3 class="subsection-title">Papers</h3>
+            <ul class="publications-list">
+                {% for pub in PUBLICATIONS %}
+                <li class="publication-item">
+                    <span class="pub-title">{{ pub.title }}</span>
+                    <span class="pub-authors">{{ pub.authors }}</span>
+                    <span class="pub-venue">{{ pub.venue }}
+                        <a href="{{ pub.hal }}" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> HAL</a>
+                    </span>
+                </li>
                 {% endfor %}
-            </div>
+            </ul>
+            {% endif %}
+            {% if REPORTS %}
+            <h3 class="subsection-title">Reports</h3>
+            <ul class="publications-list">
+                {% for report in REPORTS %}
+                <li class="publication-item report-item">
+                    <span class="pub-title">{{ report.title }}
+                        {% if report.link %}
+                        <a href="{{ report.link }}" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> PDF</a>
+                        {% endif %}
+                    </span>
+                    {% if report.authors %}
+                    <span class="pub-authors">{{ report.authors }}</span>
+                    {% endif %}
+                    <span class="pub-venue">{{ report.context }}
+                        {% if report.supervisor %} | Supervised by {{ report.supervisor }}{% endif %}
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
         </section>
         {% endif %}
 
@@ -163,7 +185,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 {{ AUTHOR }}. Built with <a href="https://getpelican.com/" target="_blank">Pelican</a>.</p>
+        <p>&copy; 2026 <i>(update 12/03)</i> {{ AUTHOR }}. Built with <a href="https://getpelican.com/" target="_blank">Pelican</a>.</p>
     </footer>
 
     <script type="application/ld+json">

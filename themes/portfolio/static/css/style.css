@@ -444,3 +444,69 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* Publications */
+.publications-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.publication-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-left: 3px solid var(--primary-color);
+    border-radius: 0 4px 4px 0;
+}
+
+.pub-title {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.pub-authors {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.pub-venue {
+    font-size: 0.85rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.pub-link {
+    font-style: normal;
+    margin-left: 8px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.pub-link:hover {
+    text-decoration: underline;
+}
+
+.subsection-title {
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 20px 0 10px 0;
+}
+
+.subsection-title:first-of-type {
+    margin-top: 0;
+}
+
+.report-item {
+    border-left-color: #6c757d;
+}
+
+.project-thumbnail:only-child {
+    max-width: 100%;
+}

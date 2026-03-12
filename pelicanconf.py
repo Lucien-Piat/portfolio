@@ -4,7 +4,7 @@
 # Basic Information
 AUTHOR = "Lucien Piat"
 SITENAME = "Lucien Piat"
-SITESUBTITLE = "Bioinformatician | Tool and workflow development"
+SITESUBTITLE = "Bioinformatics Engineer | Genome assembly & pangenomics"
 SITEDESCRIPTION = "Lucien Piat - Bioinformatician | Bordeaux, France"
 SITEURL = "https://lucienpiat.fr"
 
@@ -16,7 +16,7 @@ DEFAULT_LANG = "en"
 THEME = "themes/portfolio"
 
 # Profile
-PROFILE_IMAGE = "images/profile.jpg"
+PROFILE_IMAGE = "images/profile.png"
 AUTHOR_EMAIL = "lucienpiat33@gmail.com"
 AUTHOR_LOCATION = "Bordeaux, France"
 FAVICON = "images/favicon.ico"
@@ -28,17 +28,17 @@ LINKEDIN_URL = "https://www.linkedin.com/in/lucien-piat-47930419b/"
 
 # About Section
 ABOUT_ME = """
-I'm a final-year <b>M2 Bioinformatics and biostatistics student</b> at the University of Rouen, currently completing an 18-month apprenticeship at INRAE. <br> <br>
+I'm a <b>Bioinformatics Engineer</b> currently working at Agroscope (Switzerland) on de novo genome assembly and genetic diversity in grass ecotypes. I recently completed my M.Sc. in Bioinformatics from the University of Rouen, with an 18-month apprenticeship at INRAE.<br><br>
 
-I have experience in <b>pangenomics and genome assembly</b>, developing efficient computational solutions for large-scale genomic data analysis.<br> <br>
+My work centers on <b>pangenomics, genome assembly, and NGS analysis</b>, where I develop computational tools and workflows for large-scale genomic data. These are topics I'm eager to explore further and at greater depth.<br><br>
 
-I also served as House Manager at the Bordeaux National Opera for five years, where I coordinated reception teams during evening performances. This role taught me the value of rigor, teamwork, and an eye for detail.  
+I also served as House Manager at the Bordeaux National Opera for five years, coordinating reception teams during evening performances, a role that taught me rigor, teamwork, and attention to detail.
 """
 # Skills Section
 SKILLS = {
-    "Bioinformatics": ["Genome Assembly ⋆", "Pangenomics ⋆", "NGS Analysis", "Population Genetics", "Workflow Development", "Structural Variants", "OOP", "Simulations"],
-    "Programming": ["Python ⋆", "Snakemake ⋆", "Bash", "R", "SQL", "Java", "C", "LaTeX"],
-    "DevOps & HPC": ["Apptainer ⋆", "SLURM ⋆", "Git", "Docker", "Conda", "CI/CD", "Cluster Computing"],
+    "Bioinformatics": ["Genome Assembly ⋆", "Pangenomics ⋆", "NGS", "Workflow Development", "Structural Variants"],
+    "Programming": ["Python ⋆", "Snakemake ⋆", "Bash", "R", "LaTeX"],
+    "DevOps & HPC": ["Apptainer ⋆", "Cluster Computing", "SLURM, Hetzner", "Git", "CI/CD"],
 }
 
 # Projects Section
@@ -50,8 +50,8 @@ PROJECTS = [
         "tech": ["Python", "Population Genetics", "Coalescent Theory", "OOP", "MSprime / tskit", "Pangenome Graphs"],
         "github": "https://github.com/inrae/MSpangepop",
         "gitlab": "https://forge.inrae.fr/pangepop/MSpangepop/",
-        "extra": ("Poster", "https://lpiat-pages-cfefee.pages-forge.inrae.fr/poster_bims_lucien.pdf"),
-        "images": ["images/mspangepop_A.png", "images/mspangepop_B.png"],
+        "extra": ("Poster", "pdfs/02_Piat_et_al_Jul_2025.pdf"),
+        "images": ["images/mspangepop_A.svg"],
     },
     {
         "name": "Asm4gp ⋆",
@@ -99,19 +99,19 @@ PROJECTS = [
 
 WORK_EXPERIENCE = [
     {
-        "title": "Bioinformatics Engineer Apprentice",
+        "title": "Bioinformatics Engineer Intern",
+        "company": "Agroscope - Wädenswil, Switzerland",
+        "period": "Apr 2026 - <i>Now ⭐</i>",
+        "description": "De novo genome assembly and genetic diversity analyses in Swiss ecotypes of <i>Lolium multiflorum</i>.",
+    },
+    {
+        "title": "Bioinformatics M.Sc. Engineer Apprentice",
         "company": "INRAE BIOGECO - Cestas, France",
         "period": "2024 - 2026",
-        "description": "Developing pangenomics tools and workflows for the Pangenoak project studying structural variants in white oak genomes.",
+        "description": "Developing pangenomics tools and workflows to help identify structural variants in <i>Quercus spp.</i>.",
     },
     {
-        "title": "Deep Learning Research Exchange",
-        "company": "University of Groningen - Netherlands",
-        "period": "Jan - May 2024",
-        "description": "Applied deep learning to urban forestry, building automated pipelines for tree detection from satellite imagery.",
-    },
-    {
-        "title": "Proteomics Research Intern",
+        "title": "Proteomics B.Sc. Research Intern",
         "company": "INRAE BFP - Villenave-d'Ornon, France",
         "period": "May - June 2023",
         "description": "Statistical analysis of fruit proteome across 5 species, identifying differential expression patterns across developmental stages.",
@@ -119,16 +119,52 @@ WORK_EXPERIENCE = [
 ]
 
 EDUCATION = [
-    {"degree": "M.Sc. Bioinformatics, Modeling and Statistics", "institution": "University of Rouen Normandy", "period": "2024 - 2026", "note": "18-month apprenticeship program"},
-    {"degree": "M.Sc. Bioinformatics (Year 1)", "institution": "University of Bordeaux", "period": "2023 - 2024", "note": None},
+    {"degree": "M.Sc. Bioinformatics, Modeling and Statistics", "institution": "University of Rouen Normandy", "period": "2024 - 2026", "note": "2nd year of M.Sc. 18-month apprenticeship program"},
+    {
+        "degree": "Deep Learning Research Exchange",
+        "institution": "University of Groningen - Netherlands",
+        "period": "Jan - May 2024",
+        "note": "Deep learning of satellite imagery applied to urban forestry",
+    },
+    {"degree": "M.Sc. Bioinformatics", "institution": "University of Bordeaux", "period": "2023 - 2024", "note": "1st year of M.Sc."},
     {"degree": "B.Sc. Life Sciences", "institution": "University of Bordeaux", "period": "2021 - 2023", "note": None},
 ]
 
-ALSO = {
-    "Certifications": ["SSIAP 1 (Fire Safety Certificate)", "SST (Workplace First Aid)", "TOEIC English (970/990)"],
-    "Interests": ["Hiking", "Nature & Trees", "Continuous Learning"],
-    "Soft Skills": ["Curious", "Quick Adaptation to New Environments", "Team Coordination"],
-}
+PUBLICATIONS = [
+    {
+        "title": "MSpangepop: Simulating complex structural variants under advanced demographic scenarios using the coalescent",
+        "authors": "L. Piat, S. Denni, S. Dubois, F. Couturier, N. Lapalu, B. Linard, C. Lemaitre, L. Duvaux",
+        "venue": "JOBIM 2025, Bordeaux, France",
+        "hal": "https://hal.science/hal-05219528",
+    },
+    {
+        "title": "The pangenome of European white oaks: A new approach to identify potential barriers to gene flow",
+        "authors": "F. Couturier, L. Piat, A. Mergez, F. Graziani, S. Denni, G. Magris, A. Szukala, M. Valbuena, S. Pinosio, C. Klopp, C. Rellstab, C. Plomion, E. Saez-Laguna, L. Duvaux",
+        "venue": "EVOLTREE & Forgenius Final Conference, Nov 2025, Madrid, Spain",
+        "hal": "https://hal.science/hal-05380966",
+    },
+    {
+        "title": "The pangenome of European white oaks: A new approach to assess genetic diversity",
+        "authors": "F. Couturier, L. Piat, S. Denni, A. Mergez, G. Magris, A. Szukala, M. Valbuena, C. Plomion, S. Pinosio, E. Saez-Laguna, C. Klopp, L. Duvaux",
+        "venue": "Doctorales de la foret, Feb 2025, Poitiers, France",
+        "hal": "https://hal.science/hal-05219122",
+    },
+]
+
+REPORTS = [
+    {
+        "title": "De la construction a la simulation des pangenomes : une approche bioinformatique integree via Asm4pg et MSpangepop",
+        "context": "M.Sc. apprenticeship report, INRAE BIOGECO / Univ. Rouen, 2024-2026",
+        "supervisor": "Dr. Ludovic Duvaux",
+        "link": "pdfs/rapport_alternance_M2_2_bims.pdf",
+    },
+    {
+        "title": "Single Tree Detection: The Jurassic Bark",
+        "context": "Erasmus+ research project, University of Groningen, March 2024",
+        "authors": "M. Nurmukhambetov, C. Salzmann, K. Verhaeghe, L. Piat",
+        "link": "pdfs/DLF_report.pdf",
+    },
+]
 
 # Static files
 STATIC_PATHS = [
