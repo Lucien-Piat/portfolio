@@ -88,6 +88,7 @@ def preview(c):
     """Build production version of site"""
     pelican_run("-s {settings_publish}".format(**CONFIG))
 
+
 @task
 def livereload(c):
     """Automatically reload browser tab upon file modification."""
@@ -131,13 +132,7 @@ def livereload(c):
 def publish(c):
     """Publish to production via rsync"""
     pelican_run("-s {settings_publish}".format(**CONFIG))
-    c.run(
-        'rsync --delete --exclude ".DS_Store" -pthrvz -c '
-        '-e "ssh -p {ssh_port}" '
-        "{} {ssh_user}@{ssh_host}:{ssh_path}".format(
-            CONFIG["deploy_path"].rstrip("/") + "/", **CONFIG
-        )
-    )
+    c.run('rsync --delete --exclude ".DS_Store" -pthrvz -c ' '-e "ssh -p {ssh_port}" ' "{} {ssh_user}@{ssh_host}:{ssh_path}".format(CONFIG["deploy_path"].rstrip("/") + "/", **CONFIG))
 
 
 def pelican_run(cmd):

@@ -1,0 +1,5 @@
+{
+    "editor.formatOnSave": true,
+    "black-formatter.args": ["--config", "pyproject.toml"],
+    "editor.defaultFormatter": "ms-python.black-formatter"
+}

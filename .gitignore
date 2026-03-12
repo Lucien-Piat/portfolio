@@ -33,7 +33,6 @@ srv.pid
 pelican.pid
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
