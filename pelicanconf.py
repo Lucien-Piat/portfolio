@@ -187,7 +187,7 @@ EXTRA_PATH_METADATA = {
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
-
+READERS = {"html": None}
 # Disable unnecessary page generation
 DIRECT_TEMPLATES = ["index"]
 PAGINATED_TEMPLATES = {}
