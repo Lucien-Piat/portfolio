@@ -175,10 +175,12 @@ STATIC_PATHS = [
     "extras/robots.txt",
     "pdfs",
 ]
+
 EXTRA_PATH_METADATA = {
     "extras/CNAME": {"path": "CNAME"},
     "extras/sitemap.xml": {"path": "sitemap.xml"},
     "extras/robots.txt": {"path": "robots.txt"},
+    "extras/carte_elections_bordeaux.html": {"path": "carte_elections_bordeaux.html"},
 }
 
 # Disable feed generation
