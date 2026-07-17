@@ -5,7 +5,7 @@
 AUTHOR = "Lucien Piat"
 SITENAME = "Lucien Piat"
 SITESUBTITLE = "Bioinformatics Engineer | Genome assembly & pangenomics"
-SITEDESCRIPTION = "Lucien Piat - Bioinformatician | Bordeaux, France"
+SITEDESCRIPTION = "Lucien Piat - Bioinformatician | Zurich, Switzerland"
 SITEURL = "https://lucienpiat.fr"
 
 PATH = "content"
@@ -18,7 +18,7 @@ THEME = "themes/portfolio"
 # Profile
 PROFILE_IMAGE = "images/profile.png"
 AUTHOR_EMAIL = "lucienpiat33@gmail.com"
-AUTHOR_LOCATION = "Bordeaux, France"
+AUTHOR_LOCATION = "Zurich, Switzerland"
 FAVICON = "images/favicon.ico"
 
 # Social Links
@@ -36,7 +36,7 @@ I also served as House Manager at the Bordeaux National Opera for five years, co
 """
 # Skills Section
 SKILLS = {
-    "Bioinformatics": ["Genome Assembly ⋆", "Pangenomics ⋆", "NGS", "Workflow Development", "Structural Variants"],
+    "Bioinformatics": ["Genome Assembly ⋆", "Pangenomics ⋆", "NGS", "Workflow Development", "Population Genetics"],
     "Programming": ["Python ⋆", "Snakemake ⋆", "Bash", "R", "LaTeX"],
     "DevOps & HPC": ["Apptainer ⋆", "Cluster Computing", "SLURM, Hetzner", "Git", "CI/CD"],
 }
@@ -62,6 +62,14 @@ PROJECTS = [
         "gitlab": "https://forge.inrae.fr/asm4pg/GenomAsm4pg/",
         "extra": ("Annimated flowchart", "https://asm4pg-animated-7dc863.pages-forge.inrae.fr/asm4pg_animated.html"),
         "images": ["images/asm4pg_A.png", "images/asm4pg_B.png"],
+    },
+    {
+        "name": "ParaLies",
+        "description": "Bioinformatics tool using synonymous divergence (Ks) to detect and remove artefactual duplications caused by failed allelic collapse in heterozygous diploid genome assemblies, while preserving genuine ancient paralogues. Deployable via Conda or Apptainer.",
+        "pi": "Dr Anne C. Roulin",
+        "tech": ["Python", "Genome Assembly", "DIAMOND", "MCScanX", "Apptainer", "Conda"],
+        "github": "https://github.com/Lucien-Piat/ParaLies",
+        "images": ["images/paralies_A.png", "images/paralies_B.png"],
     },
     {
         "name": "MycoLasso",
