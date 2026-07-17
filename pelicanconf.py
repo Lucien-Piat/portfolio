@@ -44,6 +44,14 @@ SKILLS = {
 # Projects Section
 PROJECTS = [
     {
+        "name": "ParaLies",
+        "description": "Bioinformatics tool using synonymous divergence (Ks) to detect and remove artefactual duplications caused by failed allelic collapse in heterozygous diploid genome assemblies, while preserving genuine ancient paralogues. Deployable via Conda or Apptainer.",
+        "pi": "Dr Anne C. Roulin",
+        "tech": ["Python", "Genome Assembly", "DIAMOND", "MCScanX", "Apptainer", "Conda"],
+        "github": "https://github.com/Lucien-Piat/ParaLies",
+        "images": ["images/paralies_A.png", "images/paralies_B.png"],
+    },
+    {
         "name": "MSpangepop ⋆",
         "description": "Python library for pangenome simulation under coalescent demographic models. Features clean, object-oriented architecture designed for extensibility and ease of use by biologists.",
         "pi": "DSc Ludovic Duvaux",
@@ -62,14 +70,6 @@ PROJECTS = [
         "gitlab": "https://forge.inrae.fr/asm4pg/GenomAsm4pg/",
         "extra": ("Annimated flowchart", "https://asm4pg-animated-7dc863.pages-forge.inrae.fr/asm4pg_animated.html"),
         "images": ["images/asm4pg_A.png", "images/asm4pg_B.png"],
-    },
-    {
-        "name": "ParaLies",
-        "description": "Bioinformatics tool using synonymous divergence (Ks) to detect and remove artefactual duplications caused by failed allelic collapse in heterozygous diploid genome assemblies, while preserving genuine ancient paralogues. Deployable via Conda or Apptainer.",
-        "pi": "Dr Anne C. Roulin",
-        "tech": ["Python", "Genome Assembly", "DIAMOND", "MCScanX", "Apptainer", "Conda"],
-        "github": "https://github.com/Lucien-Piat/ParaLies",
-        "images": ["images/paralies_A.png", "images/paralies_B.png"],
     },
     {
         "name": "MycoLasso",
