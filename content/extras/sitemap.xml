@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lucienpiat.fr/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://lucienpiat.fr/calculateur-accueil-gtb/</loc>
-    <lastmod>2025-01-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/lucien-piat-bioinformatics-engineer.png</image:loc>
+      <image:title>Lucien Piat, Bioinformatics Engineer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/paralies-ks-paralogue-detection-genome-assembly.png</image:loc>
+      <image:title>ParaLies: Ks-based detection of artefactual duplications in a diploid genome assembly</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/paralies-synonymous-divergence-plot.png</image:loc>
+      <image:title>ParaLies synonymous divergence (Ks) distribution</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/mspangepop-pangenome-simulation-coalescent.svg</image:loc>
+      <image:title>MSpangepop pangenome simulation under coalescent demographic models</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/asm4pg-long-read-genome-assembly-pipeline.png</image:loc>
+      <image:title>Asm4pg long-read genome assembly and QC pipeline</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/asm4pg-snakemake-haplotype-assembly.png</image:loc>
+      <image:title>Asm4pg Snakemake haplotype-resolved genome assembly workflow</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/mycolasso-shiny-geospatial-visualization.png</image:loc>
+      <image:title>MycoLasso R Shiny geospatial data visualization</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/mycolasso-interactive-leaflet-map.png</image:loc>
+      <image:title>MycoLasso interactive Leaflet map</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/urban-tree-detection-unet-satellite-imagery.png</image:loc>
+      <image:title>Urban tree detection from satellite imagery with a U-Net model</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/urban-tree-detection-deep-learning-segmentation.png</image:loc>
+      <image:title>Deep learning segmentation for automated urban tree counting</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/feather-functional-enrichment-analysis-shiny.png</image:loc>
+      <image:title>FEAther Shiny app for functional enrichment analysis</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/feather-enrichment-visualization-plots.png</image:loc>
+      <image:title>FEAther functional enrichment visualization plots</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/fruit-proteomics-differential-expression-analysis.png</image:loc>
+      <image:title>Fruit proteomics differential protein expression analysis</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lucienpiat.fr/images/fruit-proteomics-r-statistical-analysis.png</image:loc>
+      <image:title>Fruit proteome statistical analysis in R</image:title>
+    </image:image>
   </url>
 </urlset>

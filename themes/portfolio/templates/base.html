@@ -6,15 +6,28 @@
     <title>{{ SITENAME }} - {{ SITESUBTITLE }}</title>
     <meta name="description" content="{{ SITEDESCRIPTION }}">
     <meta name="author" content="{{ AUTHOR }}">
-    <meta name="keywords" content="Lucien Piat, bioinformatics, bioinformatician, genome assembly, pangenomics, computational biology, NGS, Zurich, Agroscope">
-    
+    <meta name="keywords" content="Lucien Piat, bioinformatics, bioinformatician, genome assembly, pangenomics, population genetics, computational biology, NGS, Zurich, Agroscope">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ SITEURL }}">
+    <meta property="og:site_name" content="{{ SITENAME }}">
+    <meta property="og:locale" content="en_US">
     <meta property="og:title" content="{{ SITENAME }} - {{ SITESUBTITLE }}">
     <meta property="og:description" content="{{ SITEDESCRIPTION }}">
     {% if PROFILE_IMAGE %}
     <meta property="og:image" content="{{ SITEURL }}/{{ PROFILE_IMAGE }}">
+    <meta property="og:image:alt" content="{{ AUTHOR }}, {{ SITESUBTITLE }}">
+    {% endif %}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ SITENAME }} - {{ SITESUBTITLE }}">
+    <meta name="twitter:description" content="{{ SITEDESCRIPTION }}">
+    {% if PROFILE_IMAGE %}
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ PROFILE_IMAGE }}">
+    <meta name="twitter:image:alt" content="{{ AUTHOR }}, {{ SITESUBTITLE }}">
     {% endif %}
         
     <!-- Canonical URL -->
@@ -30,6 +43,39 @@
     {% if FAVICON %}
     <link rel="icon" href="{{ SITEURL }}/{{ FAVICON }}">
     {% endif %}
+
+    <!-- Structured data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ AUTHOR }}",
+      "url": "{{ SITEURL }}",
+      "image": "{{ SITEURL }}/{{ PROFILE_IMAGE }}",
+      "jobTitle": "Bioinformatics Engineer",
+      "description": "{{ SITEDESCRIPTION }}",
+      "email": "{{ AUTHOR_EMAIL }}",
+      "worksFor": { "@type": "Organization", "name": "Agroscope" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Zurich", "addressCountry": "CH" },
+      "knowsAbout": ["Genome assembly", "Pangenomics", "Population genetics", "Bioinformatics", "NGS", "Structural variants", "Workflow development"],
+      "sameAs": [{% if GITHUB_URL %}"{{ GITHUB_URL }}"{% endif %}{% if LINKEDIN_URL %}, "{{ LINKEDIN_URL }}"{% endif %}]
+    }
+    </script>
+    {% for pub in PUBLICATIONS %}
+    <!-- Structured data: ScholarlyArticle -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "{{ pub.title }}",
+      "author": "{{ pub.authors|striptags }}",
+      "publisher": { "@type": "Organization", "name": "{{ pub.venue }}" },
+      "url": "{{ pub.link }}",
+      "isPartOf": "{{ pub.venue }}",
+      "mainEntityOfPage": "{{ SITEURL }}"
+    }
+    </script>
+    {% endfor %}
 </head>
 <body>
     {% block content %}{% endblock %}

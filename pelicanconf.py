@@ -5,7 +5,7 @@
 AUTHOR = "Lucien Piat"
 SITENAME = "Lucien Piat"
 SITESUBTITLE = "Bioinformatics Engineer | Genome assembly & pangenomics"
-SITEDESCRIPTION = "Lucien Piat - Bioinformatician | Zurich, Switzerland"
+SITEDESCRIPTION = "Lucien Piat - Bioinformatics Engineer in Zurich, Switzerland, specializing in de novo genome assembly, pangenomics and population genetics."
 SITEURL = "https://lucienpiat.fr"
 
 PATH = "content"
@@ -16,7 +16,7 @@ DEFAULT_LANG = "en"
 THEME = "themes/portfolio"
 
 # Profile
-PROFILE_IMAGE = "images/profile.png"
+PROFILE_IMAGE = "images/lucien-piat-bioinformatics-engineer.png"
 AUTHOR_EMAIL = "lucienpiat33@gmail.com"
 AUTHOR_LOCATION = "Zurich, Switzerland"
 FAVICON = "images/favicon.ico"
@@ -49,7 +49,11 @@ PROJECTS = [
         "pi": "Dr Anne C. Roulin",
         "tech": ["Python", "Genome Assembly", "DIAMOND", "MCScanX", "Apptainer", "Conda"],
         "github": "https://github.com/Lucien-Piat/ParaLies",
-        "images": ["images/paralies_A.png", "images/paralies_B.png"],
+        "images": ["images/paralies-ks-paralogue-detection-genome-assembly.png", "images/paralies-synonymous-divergence-plot.png"],
+        "image_alts": [
+            "ParaLies Ks-based detection of artefactual duplications from failed allelic collapse in a diploid genome assembly",
+            "ParaLies synonymous divergence (Ks) distribution used to remove recent allelic copies while preserving ancient paralogues",
+        ],
     },
     {
         "name": "MSpangepop ⋆",
@@ -59,7 +63,10 @@ PROJECTS = [
         "github": "https://github.com/inrae/MSpangepop",
         "gitlab": "https://forge.inrae.fr/pangepop/MSpangepop/",
         "extra": ("Poster", "pdfs/02_Piat_et_al_Jul_2025.pdf"),
-        "images": ["images/mspangepop_A.svg"],
+        "images": ["images/mspangepop-pangenome-simulation-coalescent.svg"],
+        "image_alts": [
+            "MSpangepop workflow for simulating population pangenomes under coalescent demographic models",
+        ],
     },
     {
         "name": "Asm4gp ⋆",
@@ -69,7 +76,11 @@ PROJECTS = [
         "github": "https://github.com/inrae/GenomAsm4pg",
         "gitlab": "https://forge.inrae.fr/asm4pg/GenomAsm4pg/",
         "extra": ("Annimated flowchart", "https://asm4pg-animated-7dc863.pages-forge.inrae.fr/asm4pg_animated.html"),
-        "images": ["images/asm4pg_A.png", "images/asm4pg_B.png"],
+        "images": ["images/asm4pg-long-read-genome-assembly-pipeline.png", "images/asm4pg-snakemake-haplotype-assembly.png"],
+        "image_alts": [
+            "Asm4pg long-read genome assembly and QC pipeline supporting PacBio, ONT, Hi-C and HiFi data",
+            "Asm4pg Snakemake workflow producing haplotype-resolved genome assemblies for pangenome construction",
+        ],
     },
     {
         "name": "MycoLasso",
@@ -77,7 +88,11 @@ PROJECTS = [
         "tech": ["R", "Shiny", "Leaflet"],
         "github": "https://github.com/Lucien-Piat/MycoLasso",
         "extra": ("Website", "https://lucien-piat.shinyapps.io/mycolasso/"),
-        "images": ["images/mycolasso_A.png", "images/mycolasso_B.png"],
+        "images": ["images/mycolasso-shiny-geospatial-visualization.png", "images/mycolasso-interactive-leaflet-map.png"],
+        "image_alts": [
+            "MycoLasso R Shiny app visualizing geospatial data points",
+            "MycoLasso interactive Leaflet map for exploring geospatial data",
+        ],
     },
     {
         "name": "Urban Tree Detection",
@@ -85,7 +100,11 @@ PROJECTS = [
         "pi": "Pr Jean-Christophe Taveau",
         "tech": ["Computer Vision", "Python", "Deep Learning"],
         "extra": ("Report", "pdfs/DLF_report.pdf"),
-        "images": ["images/dlf_A.png", "images/dlf_B.png"],
+        "images": ["images/urban-tree-detection-unet-satellite-imagery.png", "images/urban-tree-detection-deep-learning-segmentation.png"],
+        "image_alts": [
+            "Urban tree detection from satellite imagery using a U-Net deep learning architecture",
+            "Deep learning segmentation results for automated urban tree detection and counting",
+        ],
     },
     {
         "name": "FEAther",
@@ -94,14 +113,22 @@ PROJECTS = [
         "tech": ["R", "Shiny", "Functional Enrichment Analysis"],
         "github": "https://github.com/Lucien-Piat/FEAther",
         "extra": ("Website", "https://lucien-piat.shinyapps.io/feather/"),
-        "images": ["images/feather_A.png", "images/feather_B.png"],
+        "images": ["images/feather-functional-enrichment-analysis-shiny.png", "images/feather-enrichment-visualization-plots.png"],
+        "image_alts": [
+            "FEAther R Shiny app for functional enrichment analysis of biological data",
+            "FEAther interactive plots and tables visualizing functional enrichment results",
+        ],
     },
     {
         "name": "Fruit Proteomics Analysis",
         "pi": "Dr Sophie Colombié",
         "description": "Statistical analysis of proteomic data across five fruit species to identify differential protein expression patterns during development. Utilized R for data processing, visualization, and interpretation.",
         "tech": ["R", "Functional Enrichment Analysis", "Proteomics"],
-        "images": ["images/fruits_A.png", "images/fruits_B.png"],
+        "images": ["images/fruit-proteomics-differential-expression-analysis.png", "images/fruit-proteomics-r-statistical-analysis.png"],
+        "image_alts": [
+            "Fruit proteomics differential protein expression analysis across five species",
+            "Statistical analysis in R of the fruit proteome across developmental stages",
+        ],
     },
 ]
 

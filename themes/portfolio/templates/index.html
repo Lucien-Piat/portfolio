@@ -6,7 +6,7 @@
     <header class="header">
         <div class="profile-section">
             {% if PROFILE_IMAGE %}
-            <img src="{{ SITEURL }}/{{ PROFILE_IMAGE }}" alt="{{ AUTHOR }}" class="profile-img">
+            <img src="{{ SITEURL }}/{{ PROFILE_IMAGE }}" alt="{{ AUTHOR }}, {{ SITESUBTITLE }}" class="profile-img" width="200" height="200" decoding="async" fetchpriority="high">
             {% endif %}
             <div class="profile-info">
                 <h1>{{ AUTHOR }}</h1>
@@ -104,7 +104,7 @@
                     {% if project.images %}
                     <div class="project-images">
                         {% for image in project.images %}
-                        <img src="{{ SITEURL }}/{{ image }}" alt="{{ project.name }} screenshot {{ loop.index }}" class="project-thumbnail">
+                        <img src="{{ SITEURL }}/{{ image }}" alt="{% if project.image_alts and project.image_alts[loop.index0] %}{{ project.image_alts[loop.index0] }}{% else %}{{ project.name }} — {{ project.description|striptags|truncate(90) }}{% endif %}" class="project-thumbnail" loading="lazy" decoding="async">
                         {% endfor %}
                     </div>
                     {% endif %}
@@ -201,26 +201,5 @@
     <footer class="footer">
         <p>&copy; 2026 <i>(update 12/03)</i> {{ AUTHOR }}. Built with <a href="https://getpelican.com/" target="_blank">Pelican</a>.</p>
     </footer>
-
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "{{ AUTHOR }}",
-        "url": "{{ SITEURL }}",
-        "jobTitle": "Bioinformatician",
-        "description": "{{ SITEDESCRIPTION }}",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Bordeaux",
-            "addressCountry": "France"
-        },
-        "email": "{{ AUTHOR_EMAIL }}",
-        "sameAs": [
-            "{{ GITHUB_URL }}",
-            "{{ LINKEDIN_URL }}"
-        ]
-        }
-    </script>
 </div>
 {% endblock %}
