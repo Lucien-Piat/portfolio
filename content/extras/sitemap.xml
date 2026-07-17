@@ -63,4 +63,10 @@
       <image:title>Fruit proteome statistical analysis in R</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://lucienpiat.fr/calculateur-accueil-gtb/</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
