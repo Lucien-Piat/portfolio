@@ -45,7 +45,7 @@ SKILLS = {
 PROJECTS = [
     {
         "name": "ParaLies",
-        "description": "Bioinformatics tool using synonymous divergence (Ks) to detect and remove artefactual duplications caused by failed allelic collapse in heterozygous diploid genome assemblies, while preserving genuine ancient paralogues. Deployable via Conda or Apptainer.",
+        "description": "Tool using synonymous divergence (Ks) to detect and remove artefactual duplications caused by failed allelic collapse in heterozygous diploid genome assemblies, while preserving genuine ancient paralogues.",
         "pi": "Dr Anne C. Roulin",
         "tech": ["Python", "Genome Assembly", "DIAMOND", "MCScanX", "Apptainer", "Conda"],
         "github": "https://github.com/Lucien-Piat/ParaLies",
@@ -231,11 +231,7 @@ STATIC_PATHS = [
     "pdfs",
 ]
 
-EXTRA_PATH_METADATA = {
-    "extras/CNAME": {"path": "CNAME"},
-    "extras/sitemap.xml": {"path": "sitemap.xml"},
-    "extras/robots.txt": {"path": "robots.txt"}
-}
+EXTRA_PATH_METADATA = {"extras/CNAME": {"path": "CNAME"}, "extras/sitemap.xml": {"path": "sitemap.xml"}, "extras/robots.txt": {"path": "robots.txt"}}
 
 # Disable feed generation
 FEED_ALL_ATOM = None
