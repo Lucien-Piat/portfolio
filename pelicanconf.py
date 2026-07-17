@@ -132,22 +132,42 @@ EDUCATION = [
 
 PUBLICATIONS = [
     {
+        "title": "Simulating population pangenomes under coalescent demographic models with MSpangenome",
+        "authors": "<b>L. Piat</b>, S. Denni, S. Dubois, B. Linard, L. Duvaux",
+        "venue": "bioRxiv, 2026",
+        "link": "https://www.biorxiv.org/content/10.64898/2026.06.29.735168v1",
+        "link_label": "bioRxiv",
+    },
+    {
+        "title": "A reference genome assembly for Quercus canariensis Willd",
+        "authors": "F. Couturier, C. Cravero, I. Lesur, J. Confais, E. Belmonte, <b>L. Piat</b>, W. Marande, C. Rellstab, M. Valbuena, E. Saez-Laguna, L. Duvaux",
+        "venue": "bioRxiv, 2026",
+        "link": "https://www.biorxiv.org/content/10.64898/2026.03.31.714748v2",
+        "link_label": "bioRxiv",
+    },
+]
+
+POSTERS = [
+    {
         "title": "MSpangepop: Simulating complex structural variants under advanced demographic scenarios using the coalescent",
-        "authors": "L. Piat, S. Denni, S. Dubois, F. Couturier, N. Lapalu, B. Linard, C. Lemaitre, L. Duvaux",
+        "authors": "<b>L. Piat</b>, S. Denni, S. Dubois, F. Couturier, N. Lapalu, B. Linard, C. Lemaitre, L. Duvaux",
         "venue": "JOBIM 2025, Bordeaux, France",
-        "hal": "https://hal.science/hal-05219528",
+        "link": "https://hal.science/hal-05219528",
+        "link_label": "HAL",
     },
     {
         "title": "The pangenome of European white oaks: A new approach to identify potential barriers to gene flow",
-        "authors": "F. Couturier, L. Piat, A. Mergez, F. Graziani, S. Denni, G. Magris, A. Szukala, M. Valbuena, S. Pinosio, C. Klopp, C. Rellstab, C. Plomion, E. Saez-Laguna, L. Duvaux",
+        "authors": "F. Couturier, <b>L. Piat</b>, A. Mergez, F. Graziani, S. Denni, G. Magris, A. Szukala, M. Valbuena, S. Pinosio, C. Klopp, C. Rellstab, C. Plomion, E. Saez-Laguna, L. Duvaux",
         "venue": "EVOLTREE & Forgenius Final Conference, Nov 2025, Madrid, Spain",
-        "hal": "https://hal.science/hal-05380966",
+        "link": "https://hal.science/hal-05380966",
+        "link_label": "HAL",
     },
     {
         "title": "The pangenome of European white oaks: A new approach to assess genetic diversity",
-        "authors": "F. Couturier, L. Piat, S. Denni, A. Mergez, G. Magris, A. Szukala, M. Valbuena, C. Plomion, S. Pinosio, E. Saez-Laguna, C. Klopp, L. Duvaux",
+        "authors": "F. Couturier, <b>L. Piat</b>, S. Denni, A. Mergez, G. Magris, A. Szukala, M. Valbuena, C. Plomion, S. Pinosio, E. Saez-Laguna, C. Klopp, L. Duvaux",
         "venue": "Doctorales de la foret, Feb 2025, Poitiers, France",
-        "hal": "https://hal.science/hal-05219122",
+        "link": "https://hal.science/hal-05219122",
+        "link_label": "HAL",
     },
 ]
 

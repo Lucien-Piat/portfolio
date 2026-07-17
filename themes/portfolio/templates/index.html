@@ -131,7 +131,7 @@
         </section>
 
         <!-- Publications & Reports Section -->
-        {% if PUBLICATIONS or REPORTS %}
+        {% if PUBLICATIONS or POSTERS or REPORTS %}
         <section id="publications" class="section">
             <h2><i class="fas fa-file-alt"></i> Publications & Reports</h2>
             {% if PUBLICATIONS %}
@@ -142,7 +142,21 @@
                     <span class="pub-title">{{ pub.title }}</span>
                     <span class="pub-authors">{{ pub.authors }}</span>
                     <span class="pub-venue">{{ pub.venue }}
-                        <a href="{{ pub.hal }}" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> HAL</a>
+                        <a href="{{ pub.link }}" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> {{ pub.link_label }}</a>
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% if POSTERS %}
+            <h3 class="subsection-title">Posters & Conference Presentations</h3>
+            <ul class="publications-list">
+                {% for poster in POSTERS %}
+                <li class="publication-item">
+                    <span class="pub-title">{{ poster.title }}</span>
+                    <span class="pub-authors">{{ poster.authors }}</span>
+                    <span class="pub-venue">{{ poster.venue }}
+                        <a href="{{ poster.link }}" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> {{ poster.link_label }}</a>
                     </span>
                 </li>
                 {% endfor %}
