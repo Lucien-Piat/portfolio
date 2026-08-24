@@ -56,3 +56,5 @@ local_settings.py
 *.bak
 .*.swp
 *~.nib
+
+.vscode/
