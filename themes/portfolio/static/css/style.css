@@ -305,6 +305,67 @@ body {
     margin-right: 5px;
 }
 
+/* Smaller Projects - Compact half-width cards */
+.small-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: 1fr; /* every card gets the same height */
+}
+
+.project-card-small {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-small:hover {
+    transform: translateX(5px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.project-card-small h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+.project-card-small p {
+    color: #6c757d;
+    margin-bottom: 12px;
+    line-height: 1.45;
+    font-size: 0.9rem;
+}
+
+.project-thumbnail-small {
+    display: block;
+    width: 100%;
+    height: 130px; /* fixed band so images align across cards */
+    flex: none;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.project-card-small .project-tech {
+    margin-top: auto; /* pin the tags + links to the bottom */
+}
+
+.project-card-small .tech-tag {
+    font-size: 0.78rem;
+    padding: 3px 8px;
+}
+
+.project-card-small .project-links a {
+    font-size: 0.85rem;
+    margin-right: 12px;
+}
+
 /* Additional Information */
 .additional-grid {
     display: grid;
@@ -426,6 +487,19 @@ body {
         width: 100%;
         max-width: 100%;
         max-height: 180px; /* Reduce max height on mobile */
+    }
+    
+    .small-projects-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    
+    .project-card-small {
+        padding: 15px;
+    }
+    
+    .project-thumbnail-small {
+        height: 180px;
     }
     
     .project-tech {

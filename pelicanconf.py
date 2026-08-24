@@ -24,6 +24,7 @@ FAVICON = "images/favicon.ico"
 # Social Links
 GITHUB_URL = "https://github.com/Lucien-Piat"
 LINKEDIN_URL = "https://www.linkedin.com/in/lucien-piat-47930419b/"
+BLUESKY_URL = "https://bsky.app/profile/lpiat.bsky.social"
 
 
 # About Section
@@ -36,9 +37,9 @@ I also served as House Manager at the Bordeaux National Opera for five years, co
 """
 # Skills Section
 SKILLS = {
-    "Bioinformatics": ["Genome Assembly ⋆", "Pangenomics ⋆", "NGS", "Workflow Development", "Population Genetics"],
-    "Programming": ["Python ⋆", "Snakemake ⋆", "Bash", "R", "LaTeX"],
-    "DevOps & HPC": ["Apptainer ⋆", "Cluster Computing", "SLURM, Hetzner", "Git", "CI/CD"],
+    "Bioinformatics": ["Genome Assembly", "Pangenomics ⋆", "NGS", "Workflow Development", "Population Genetics"],
+    "Programming": ["Python", "Snakemake", "Bash", "R", "LaTeX"],
+    "DevOps & HPC": ["Apptainer", "Cluster Computing", "SLURM, Hetzner", "Git", "CI/CD"],
 }
 
 # Projects Section
@@ -82,9 +83,13 @@ PROJECTS = [
             "Asm4pg Snakemake workflow producing haplotype-resolved genome assemblies for pangenome construction",
         ],
     },
+]
+
+# Smaller projects, rendered as compact half-width cards with a single image
+SMALL_PROJECTS = [
     {
         "name": "MycoLasso",
-        "description": "MycoLasso is a Shiny app to load, visualize, and interactively explore geospatial data points.",
+        "description": "MycoLasso is a Shiny GUI app to load, visualize, and interactively explore geospatial data points.",
         "tech": ["R", "Shiny", "Leaflet"],
         "github": "https://github.com/Lucien-Piat/MycoLasso",
         "extra": ("Website", "https://lucien-piat.shinyapps.io/mycolasso/"),
@@ -96,7 +101,7 @@ PROJECTS = [
     },
     {
         "name": "Urban Tree Detection",
-        "description": "Deep learning pipeline for automated tree detection and counting from satellite imagery using U-Net architecture. Developed during Erasmus+ exchange at University of Groningen.",
+        "description": " U-Net Deep learning pipeline for tree detection and counting from satellite imagery.",
         "pi": "Pr Jean-Christophe Taveau",
         "tech": ["Computer Vision", "Python", "Deep Learning"],
         "extra": ("Report", "pdfs/DLF_report.pdf"),
@@ -108,7 +113,7 @@ PROJECTS = [
     },
     {
         "name": "FEAther",
-        "description": "Shiny application designed for functional enrichment analysis of biological data. It allows users to upload CSV files, select various analysis options, and visualize results through interactive plots and tables.",
+        "description": "Shiny GUI for functional enrichment analysis of biological data.",
         "pi": "Asst. Prof Hélène Dauchel",
         "tech": ["R", "Shiny", "Functional Enrichment Analysis"],
         "github": "https://github.com/Lucien-Piat/FEAther",
@@ -122,7 +127,7 @@ PROJECTS = [
     {
         "name": "Fruit Proteomics Analysis",
         "pi": "Dr Sophie Colombié",
-        "description": "Statistical analysis of proteomic data across five fruit species to identify differential protein expression patterns during development. Utilized R for data processing, visualization, and interpretation.",
+        "description": "Statistical analysis of proteomic data across five fruit species.",
         "tech": ["R", "Functional Enrichment Analysis", "Proteomics"],
         "images": ["images/fruit-proteomics-differential-expression-analysis.png", "images/fruit-proteomics-r-statistical-analysis.png"],
         "image_alts": [
@@ -167,14 +172,21 @@ EDUCATION = [
 
 PUBLICATIONS = [
     {
-        "title": "Simulating population pangenomes under coalescent demographic models with MSpangenome",
+        "title": "(preprint) A chromosome-scale genome assembly of the Swiss Lolium multiflorum ecotype Tremona reveals a scalable method to purge spurious duplications",
+        "authors": "<b>L. Piat</b>, G. Herren, C. Grieder, A.C. Roulin",
+        "venue": "bioRxiv, 2026",
+        "link": "https://www.biorxiv.org/content/10.64898/2026.08.18.745395v1",
+        "link_label": "bioRxiv",
+    },
+    {
+        "title": "(preprint) Simulating population pangenomes under coalescent demographic models with MSpangenome",
         "authors": "<b>L. Piat</b>, S. Denni, S. Dubois, B. Linard, L. Duvaux",
         "venue": "bioRxiv, 2026",
         "link": "https://www.biorxiv.org/content/10.64898/2026.06.29.735168v1",
         "link_label": "bioRxiv",
     },
     {
-        "title": "A reference genome assembly for Quercus canariensis Willd",
+        "title": "(preprint) A reference genome assembly for Quercus canariensis Willd",
         "authors": "F. Couturier, C. Cravero, I. Lesur, J. Confais, E. Belmonte, <b>L. Piat</b>, W. Marande, C. Rellstab, M. Valbuena, E. Saez-Laguna, L. Duvaux",
         "venue": "bioRxiv, 2026",
         "link": "https://www.biorxiv.org/content/10.64898/2026.03.31.714748v2",
@@ -189,21 +201,7 @@ POSTERS = [
         "venue": "JOBIM 2025, Bordeaux, France",
         "link": "https://hal.science/hal-05219528",
         "link_label": "HAL",
-    },
-    {
-        "title": "The pangenome of European white oaks: A new approach to identify potential barriers to gene flow",
-        "authors": "F. Couturier, <b>L. Piat</b>, A. Mergez, F. Graziani, S. Denni, G. Magris, A. Szukala, M. Valbuena, S. Pinosio, C. Klopp, C. Rellstab, C. Plomion, E. Saez-Laguna, L. Duvaux",
-        "venue": "EVOLTREE & Forgenius Final Conference, Nov 2025, Madrid, Spain",
-        "link": "https://hal.science/hal-05380966",
-        "link_label": "HAL",
-    },
-    {
-        "title": "The pangenome of European white oaks: A new approach to assess genetic diversity",
-        "authors": "F. Couturier, <b>L. Piat</b>, S. Denni, A. Mergez, G. Magris, A. Szukala, M. Valbuena, C. Plomion, S. Pinosio, E. Saez-Laguna, C. Klopp, L. Duvaux",
-        "venue": "Doctorales de la foret, Feb 2025, Poitiers, France",
-        "link": "https://hal.science/hal-05219122",
-        "link_label": "HAL",
-    },
+    }
 ]
 
 REPORTS = [
